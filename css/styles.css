@@ -212,12 +212,24 @@ p {
 
 .contacto-img img,
 .linea-tiempo-img img,
-.trayectoria-img img,
-.equipo-img img {
-  max-width: 900px;
-  border-radius: 10px;
+.trayectoria-img img{
+  width: 100%; /* se adapta al ancho del contenedor */ 
+  max-width: 700px; /* tamaño ideal en pantallas grandes */ 
+  height: auto; /* mantiene proporción */ 
+  margin: 0 auto; /* centra la imagen */ 
+  display: block; /* evita comportamientos raros */ 
+  border-radius: 10px; 
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
+
+.equipo-img img {
+  max-width: 700px; /* o 600px si la querés más chica */
+  width: 100%;      /* esto la hace realmente responsive */
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
 
 /* ---------------------------------------------------
    MAPA EMBEBIDO
@@ -227,3 +239,23 @@ p {
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
+/* Ajuste para tablets */
+@media (max-width: 992px) {
+  .body-con-nav {
+    padding-top: 140px;
+  }
+}
+
+/* Ajuste para celulares grandes */
+@media (max-width: 768px) {
+  .body-con-nav {
+    padding-top: 160px;
+  }
+}
+
+/* Ajuste para celulares chicos */
+@media (max-width: 576px) {
+  .body-con-nav {
+    padding-top: 180px;
+  }
+}
