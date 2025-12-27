@@ -13,31 +13,28 @@ body {
   line-height: 1.6;
 }
 
-.imagenes-historicas {
-  display: flex;
-  flex-wrap: nowrap; /* evita que bajen */
-  overflow-x: auto; /* scroll horizontal si no entran */
-  gap: 15px;
-  padding-bottom: 10px;
+/* ---------------------------------------------------
+   TITULOS
+--------------------------------------------------- */
+h1 {
+  color: #095b9e;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.imagenes-historicas img {
-  width: 180px; /* tamaño uniforme */
-  height: 180px;
-  object-fit: cover;
-  border-radius: 6px;
-  flex-shrink: 0; /* evita que se achiquen */
+h2, h3, h4 {
+  text-align: center;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  font-weight: bold;
 }
 
-.presentacion-img img {
-  max-width: 700px; /* tamaño ideal */
-  width: 100%;
-  margin: 0 auto;
-  display: block;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
 
+p {
+  font-size: 18px;
+  color: #111;
+}
 
 /* ---------------------------------------------------
    NAV FIJO Y MODERNO
@@ -47,25 +44,39 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 1000;
   background-color: #0d6efd;
   padding: 12px 0;
   box-shadow: 0 2px 8px rgba(0,0,0,0.25);
 }
 
-.header-fijo .nav-link {
-  color: #fff !important;
+
+.header-fijo h1 a {
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-pills .nav-link {
+  color: white !important;
+  opacity: 0.8;
   font-weight: bold;
   transition: 0.3s ease;
 }
 
-.header-fijo .nav-link:hover {
+.nav-pills .nav-link:hover {
+  opacity: 1;
   color: #ffe082 !important;
+}
+
+.nav-pills .nav-link.active {
+  background-color: rgba(255,255,255,0.3);
+  color: white !important;
 }
 
 /* Evita que el contenido quede debajo del nav */
 .body-con-nav {
-  padding-top: 120px;
+  padding-top: 110px;
 }
 
 /* ---------------------------------------------------
@@ -105,101 +116,31 @@ footer .footer-item:hover {
 }
 
 /* ---------------------------------------------------
-   TITULOS
+   IMÁGENES GENERALES
 --------------------------------------------------- */
-h1 {
-  color: #095b9e;
-  font-size: 48px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-h2, h3, h4 {
-  text-align: center;
-  text-decoration: underline;
-  margin-bottom: 15px;
-}
-
-p {
-  font-size: 18px;
-  color: #111;
-}
-
-/* ---------------------------------------------------
-   SECCIONES ESPECÍFICAS
---------------------------------------------------- */
-.nosotros-galeria {
-  text-align: center;
-  text-decoration: overline underline;
-}
-
-.historia {
-  text-align: justify;
-}
-
-.valores {
-  font-size: 20px;
-}
-
-/* ---------------------------------------------------
-   GALERÍA DE SERVICIOS (INDEX)
---------------------------------------------------- */
-.galeria-servicios {
-  text-align: center;
-  padding: 30px;
-}
-
-.galeria-servicios .item {
-  display: inline-block;
-  width: 30%;
-  margin: 1%;
-  vertical-align: top;
-}
-
-.galeria-servicios img {
+.presentacion-img img,
+.contacto-img img,
+.linea-tiempo-img img,
+.trayectoria-img img,
+.equipo-img img {
   width: 100%;
-  height: 350px;
+  max-width: 700px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.banner-container img {
+  height: 180px;
+  width: 100%;
   object-fit: cover;
-  border-radius: 6px;
-}
-
-.galeria-servicios p {
-  margin-top: 8px;
-  font-weight: bold;
+  object-position: center;
 }
 
 /* ---------------------------------------------------
-   IMÁGENES HISTÓRICAS (NOSOTROS)
---------------------------------------------------- */
-.imagenes-historicas img {
-  width: 14%;
-  height: 200px;
-  object-fit: cover;
-  margin: 1%;
-  border-radius: 6px;
-}
-
-/* ---------------------------------------------------
-   GALERÍA GENERAL (GALERIA.HTML)
---------------------------------------------------- */
-.folleto img {
-  width: 300px;
-  border-radius: 6px;
-}
-
-.galeria-video video,
-.ayd video {
-  width: 100%;
-  border-radius: 6px;
-}
-
-.proyectos img {
-  width: 100%;
-  border-radius: 6px;
-}
-
-/* ---------------------------------------------------
-   IMÁGENES DECORATIVAS (GENÉRICAS)
+   ICONOS
 --------------------------------------------------- */
 .icono-servicio img,
 .icono-curiosidad img,
@@ -210,26 +151,50 @@ p {
   margin-bottom: 10px;
 }
 
-.contacto-img img,
-.linea-tiempo-img img,
-.trayectoria-img img{
-  width: 100%; /* se adapta al ancho del contenedor */ 
-  max-width: 700px; /* tamaño ideal en pantallas grandes */ 
-  height: auto; /* mantiene proporción */ 
-  margin: 0 auto; /* centra la imagen */ 
-  display: block; /* evita comportamientos raros */ 
-  border-radius: 10px; 
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+/* ---------------------------------------------------
+   SECCIONES ESPECÍFICAS
+--------------------------------------------------- */
+.historia {
+  text-align: justify;
 }
 
-.equipo-img img {
-  max-width: 700px; /* o 600px si la querés más chica */
-  width: 100%;      /* esto la hace realmente responsive */
-  height: auto;
+.valores {
+  font-size: 20px;
+}
+
+.imagenes-historicas {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 15px;
+  padding-bottom: 10px;
+}
+
+.imagenes-historicas img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+/* ---------------------------------------------------
+   GALERÍA (VIDEOS E IMÁGENES)
+--------------------------------------------------- */
+.galeria-video video,
+.ayd video,
+.proyectos img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* ---------------------------------------------------
+   ASIDE
+--------------------------------------------------- */
+aside {
+  max-width: 350px;
   margin: 0 auto;
-  display: block;
 }
-
 
 /* ---------------------------------------------------
    MAPA EMBEBIDO
@@ -239,23 +204,39 @@ p {
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
-/* Ajuste para tablets */
+/* ---------------------------------------------------
+   MEDIA QUERIES
+--------------------------------------------------- */
 @media (max-width: 992px) {
+  .body-con-nav {
+    padding-top: 120px;
+  }
+}
+
+@media (max-width: 768px) {
   .body-con-nav {
     padding-top: 140px;
   }
 }
 
-/* Ajuste para celulares grandes */
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .body-con-nav {
-    padding-top: 160px;
+    padding-top: 120px;
+  }
+
+  .banner-container img {
+    height: 120px;
+  }
+}
+@media (max-width: 576px) {
+  .imagenes-historicas {
+    flex-wrap: wrap;      /* permite que bajen */
+    justify-content: center;
+  }
+
+  .imagenes-historicas img {
+    width: 45%;           /* dos por fila */
+    height: 140px;
   }
 }
 
-/* Ajuste para celulares chicos */
-@media (max-width: 576px) {
-  .body-con-nav {
-    padding-top: 180px;
-  }
-}

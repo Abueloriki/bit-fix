@@ -16,20 +16,34 @@
 
 <body class="body-con-nav">
 
-    <!-- NAV FIJO -->
-    <header class="header-fijo">
-        <div class="container d-flex justify-content-between align-items-center">
-            <h1 class="m-0 text-white">Galería</h1>
+    <!-- HEADER UNIFICADO -->
+    <header class="header-fijo py-3 shadow-sm bg-primary">
+        <div class="container d-flex flex-column align-items-center">
 
-            <nav>
-                <ul class="nav">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
-                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            <h1 class="m-0">
+                <a href="../index.html" class="text-white text-decoration-none">Bit&Fix</a>
+            </h1>
+
+            <nav class="mt-3">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
                 </ul>
             </nav>
+
         </div>
     </header>
 
@@ -108,18 +122,21 @@
         </section>
 
         <!-- ASIDE -->
-        <aside class="mt-5 p-4 bg-light border-start border-4 border-primary shadow-sm">
+        <aside class="mt-5">
+            <div class="card shadow-sm border-0">
+                <img src="../img/proyectos_destacados.jpeg" 
+                     alt="Folleto" 
+                     class="card-img-top img-fluid">
 
-            <h3 class="fw-bold">Contactame</h3>
-
-            <div class="folleto mt-3">
-                <img src="../img/proyectos_destacados.jpeg" alt="folleto" class="img-fluid rounded shadow-sm">
+                <div class="card-body">
+                    <h3 class="fw-bold">Contactame</h3>
+                </div>
             </div>
         </aside>
 
     </main>
 
-    <!-- FOOTER PROFESIONAL -->
+    <!-- FOOTER -->
     <footer class="py-4 mt-5">
         <div class="container text-center">
 
