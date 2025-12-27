@@ -1,6 +1,4 @@
-/* ---------------------------------------------------
-   RESET BÁSICO
---------------------------------------------------- */
+/* RESET BÁSICO */
 * {
   margin: 0;
   padding: 0;
@@ -13,9 +11,7 @@ body {
   line-height: 1.6;
 }
 
-/* ---------------------------------------------------
-   TITULOS
---------------------------------------------------- */
+/* TITULOS */
 h1 {
   color: #095b9e;
   font-size: 48px;
@@ -36,9 +32,7 @@ p {
   color: #111;
 }
 
-/* ---------------------------------------------------
-   NAV FIJO Y MODERNO
---------------------------------------------------- */
+/* NAV FIJO */
 .header-fijo {
   position: fixed;
   top: 0;
@@ -74,14 +68,11 @@ p {
   color: white !important;
 }
 
-/* Evita que el contenido quede debajo del nav */
 .body-con-nav {
   padding-top: 110px;
 }
 
-/* ---------------------------------------------------
-   FOOTER PROFESIONAL
---------------------------------------------------- */
+/* FOOTER */
 footer {
   background-color: #0d6efd;
   color: #fff;
@@ -115,9 +106,7 @@ footer .footer-item:hover {
   text-decoration: underline;
 }
 
-/* ---------------------------------------------------
-   IMÁGENES GENERALES
---------------------------------------------------- */
+/* IMÁGENES GENERALES */
 .presentacion-img img,
 .contacto-img img,
 .linea-tiempo-img img,
@@ -139,9 +128,7 @@ footer .footer-item:hover {
   object-position: center;
 }
 
-/* ---------------------------------------------------
-   ICONOS
---------------------------------------------------- */
+/* ICONOS */
 .icono-servicio img,
 .icono-curiosidad img,
 .icono-etica img,
@@ -151,9 +138,7 @@ footer .footer-item:hover {
   margin-bottom: 10px;
 }
 
-/* ---------------------------------------------------
-   SECCIONES ESPECÍFICAS
---------------------------------------------------- */
+/* SECCIONES ESPECÍFICAS */
 .historia {
   text-align: justify;
 }
@@ -178,9 +163,7 @@ footer .footer-item:hover {
   flex-shrink: 0;
 }
 
-/* ---------------------------------------------------
-   GALERÍA (VIDEOS E IMÁGENES)
---------------------------------------------------- */
+/* GALERÍA (VIDEOS E IMÁGENES) */
 .galeria-video video,
 .ayd video,
 .proyectos img {
@@ -188,25 +171,34 @@ footer .footer-item:hover {
   border-radius: 6px;
 }
 
-/* ---------------------------------------------------
-   ASIDE
---------------------------------------------------- */
+/* GRID PARA GALERÍA (VIDEOS + IMÁGENES) */
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.grid-galeria video,
+.grid-galeria img {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+
+/* ASIDE */
 aside {
   max-width: 350px;
   margin: 0 auto;
 }
 
-/* ---------------------------------------------------
-   MAPA EMBEBIDO
---------------------------------------------------- */
+/* MAPA EMBEBIDO */
 .mapa-embed iframe {
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
-/* ---------------------------------------------------
-   MEDIA QUERIES
---------------------------------------------------- */
+/* MEDIA QUERIES */
 @media (max-width: 992px) {
   .body-con-nav {
     padding-top: 120px;
