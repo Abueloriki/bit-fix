@@ -1,0 +1,155 @@
+@use "../utilities/variables" as vars;
+@use "../utilities/mixins" as mix;
+
+/*ICONOS GENERALES*/
+.icono-index,
+.icono-contacto,
+.icono-nosotros {
+  max-width: 90px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.icono-contacto { max-width: 80px; }
+.icono-nosotros { max-width: 120px; }
+.icono-curiosidad {
+  max-width: 90px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/*IMÁGENES ESPECIALES*/
+.img-index,
+.img-contacto,
+.img-nosotros,
+.img-vertical {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*BANNERS*/
+.banner-container img {
+  border-radius: vars.$radius-md;
+  box-shadow: vars.$shadow-sm;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*GALERÍA*/
+.bloque-galeria {
+  @include mix.bloque-galeria();
+}
+
+/*CARDS DE SERVICIOS*/
+.card-servicio {
+  @include mix.card-servicio();
+}
+
+
+/*ASIDES*/
+aside { border-radius: vars.$radius-md; }
+
+.dato-curioso { border-left: 4px solid vars.$color-nav; }
+
+/*FORMULARIOS*/
+form label { font-weight: 600; }
+
+form .form-control {
+  border-radius: vars.$radius-md;
+  border: 1px solid vars.$gris-300;
+}
+
+form .form-control:focus {
+  border-color: vars.$color-nav;
+  box-shadow: 0 0 0 0.2rem rgba(vars.$color-nav, 0.25);
+}
+
+/*BOTONES PERSONALIZADOS*/
+.btn-primary {
+  background-color: vars.$color-nav;
+  border-color: vars.$color-nav;
+  transition: vars.$transition-base;
+
+  &:hover {
+    background-color: darken(vars.$color-nav, 8%);
+    border-color: darken(vars.$color-nav, 8%);
+  }
+}
+
+.btn-outline-primary {
+  color: vars.$color-nav;
+  border-color: vars.$color-nav;
+
+  &:hover {
+    background-color: vars.$color-nav;
+    color: white;
+  }
+}
+
+/*EQUIPO (INDEX)*/
+.equipo-foto {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: vars.$radius-md;
+}
+
+.img-nosotros-mini {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: vars.$radius-md;
+  display: block;
+  margin: 0 auto;
+}
+
+.nosotros-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.imagenes-historicas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; // separación entre imágenes
+}
+
+.img-nosotros-mini {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: vars.$radius-md;
+}
+
+aside .card {
+  width: fit-content;       // la card se ajusta al contenido
+  margin: 0 auto;           // centrada en el aside
+  text-align: center;       // centra el contenido interno
+}
+
+aside .card img.img-vertical {
+  display: block;
+  margin: 0 auto;
+  max-width: 250px;         // ajusta el tamaño máximo de la imagen
+  height: auto;
+  border-radius: vars.$radius-md;
+  box-shadow: vars.$shadow-sm;
+}

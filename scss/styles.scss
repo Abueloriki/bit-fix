@@ -1,0 +1,5 @@
+@use "utilities/variables";   // paleta, tipografía, espaciados, sombras
+@use "base/base";        // resets, tipografía global, imágenes globales
+@use "layout/layout";      // header, nav, footer, banners, estructura
+@use "components/components";  // iconos, cards, galería, formularios, botones
+@use "utilities/mixins";    // mixins reutilizables

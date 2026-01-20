@@ -1,0 +1,69 @@
+@use "../utilities/variables" as vars;
+
+@mixin card-servicio(
+  $radius: vars.$radius-md,
+  $shadow: vars.$shadow-sm,
+  $title-color: vars.$color-nav
+) {
+  border-radius: $radius;
+  box-shadow: $shadow;
+  overflow: hidden;
+
+  img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: $radius $radius 0 0;
+  }
+
+  .card-title {
+    font-weight: 700;
+    color: $title-color;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+}
+
+@mixin bloque-galeria(
+  $min-width: 260px,
+  $gap: vars.$sp-4,
+  $radius: vars.$radius-md,
+  $shadow: vars.$shadow-sm
+) {
+  margin-block: vars.$sp-6;
+
+  .titulo-seccion {
+    font-size: 1.2rem;
+    margin-bottom: vars.$sp-3;
+  }
+
+  .grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($min-width, 1fr));
+    gap: $gap;
+    margin-top: vars.$sp-3;
+
+    video,
+    img {
+      width: 100%;
+      border-radius: $radius;
+      box-shadow: $shadow;
+      display: block;
+      margin: 0 auto;
+    }
+
+    video {
+      max-width: $min-width;
+      min-height: 380px;
+      object-fit: contain;
+      background-color: #000;
+    }
+
+    img {
+      object-fit: cover;
+    }
+  }
+}

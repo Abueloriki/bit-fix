@@ -26,21 +26,11 @@
 
             <nav class="mt-3">
                 <ul class="nav nav-pills">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="galeria.html">Galería</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="servicios.html">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
 
@@ -68,8 +58,9 @@
         <!-- GRID DE SERVICIOS -->
         <section class="row g-4">
 
+            <!-- CARD -->
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
+                <div class="card card-servicio h-100 shadow-sm">
                     <img src="../img/soporte_tecnico_confiable.jpg" class="card-img-top" alt="Soporte técnico">
                     <div class="card-body">
                         <h5 class="card-title">Soporte Técnico</h5>
@@ -78,8 +69,9 @@
                 </div>
             </div>
 
+            <!-- CARD -->
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
+                <div class="card card-servicio h-100 shadow-sm">
                     <img src="../img/automatizacion_y_eficiencia.jpg" class="card-img-top" alt="Automatización">
                     <div class="card-body">
                         <h5 class="card-title">Automatización de Procesos</h5>
@@ -88,8 +80,9 @@
                 </div>
             </div>
 
+            <!-- CARD -->
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
+                <div class="card card-servicio h-100 shadow-sm">
                     <img src="../img/desarrollo_web_funcional.jpg" class="card-img-top" alt="Desarrollo web">
                     <div class="card-body">
                         <h5 class="card-title">Desarrollo Web</h5>
@@ -98,8 +91,9 @@
                 </div>
             </div>
 
+            <!-- CARD -->
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
+                <div class="card card-servicio h-100 shadow-sm">
                     <img src="../img/asesoramiento_profesional.jpg" class="card-img-top" alt="Asesoramiento">
                     <div class="card-body">
                         <h5 class="card-title">Asesoramiento Personalizado</h5>
@@ -108,8 +102,9 @@
                 </div>
             </div>
 
+            <!-- CARD -->
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
+                <div class="card card-servicio h-100 shadow-sm">
                     <img src="../img/recursos_y_aprendizaje.jpg" class="card-img-top" alt="Aprendizaje">
                     <div class="card-body">
                         <h5 class="card-title">Capacitación y Recursos</h5>
@@ -118,8 +113,9 @@
                 </div>
             </div>
 
+            <!-- CARD -->
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
+                <div class="card card-servicio h-100 shadow-sm">
                     <img src="../img/soluciones_a_tu_medida.jpg" class="card-img-top" alt="Soluciones a medida">
                     <div class="card-body">
                         <h5 class="card-title">Soluciones a Medida</h5>
@@ -132,7 +128,7 @@
 
     </main>
 
-    <!-- FOOTER -->
+    <!-- FOOTER PROFESIONAL -->
     <footer class="py-4 mt-5">
         <div class="container text-center">
 
@@ -142,7 +138,8 @@
             <div class="redes-sociales d-flex justify-content-center align-items-center gap-4 flex-wrap mt-3">
 
                 <a href="mailto:contacto@bitandfix.com" class="footer-item d-flex align-items-center gap-2">
-                    <svg width="22" height="22" fill="white" viewBox="0 0 16 16">
+                    <svg width="22" height="22" viewBox="0 0 16 16" 
+                        class="footer-icon footer-icon-mail">
                         <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v.217l-8 4.8-8-4.8V4z"/>
                         <path d="M0 6.383v5.617a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6.383l-7.555 4.533a1 1 0 0 1-1.11 0L0 6.383z"/>
                     </svg>
@@ -150,21 +147,24 @@
                 </a>
 
                 <a href="https://wa.me/5493510000000" target="_blank" rel="noopener" class="footer-item d-flex align-items-center gap-2">
-                    <svg width="22" height="22" fill="white" viewBox="0 0 16 16">
+                    <svg svg width="22" height="22" viewBox="0 0 16 16" 
+                        class="footer-icon footer-icon-whatsapp">
                         <path d="M13.601 2.326A7.854 7.854 0 0 0 8.002 0C3.584 0 .002 3.582.002 8c0 1.41.37 2.79 1.07 4.01L0 16l4.11-1.07A7.93 7.93 0 0 0 8.002 16c4.418 0 8-3.582 8-8 0-2.137-.83-4.148-2.399-5.674z"/>
                     </svg>
                     WhatsApp
                 </a>
 
                 <a href="https://instagram.com/bitandfix" target="_blank" rel="noopener" class="footer-item d-flex align-items-center gap-2">
-                    <svg width="22" height="22" fill="white" viewBox="0 0 16 16">
+                    <svg svg width="22" height="22" viewBox="0 0 16 16" 
+                        class="footer-icon footer-icon-instagram">
                         <path d="M8 3c1.657 0 1.86.006 2.513.036.651.03 1.098.14 1.35.233.34.125.583.275.84.532.257.257.407.5.532.84.093.252.203.699.233 1.35.03.653.036.856.036 2.513s-.006 1.86-.036 2.513c-.03.651-.14 1.098-.233 1.35a2.31 2.31 0 0 1-.532.84 2.31 2.31 0 0 1-.84.532c-.252.093-.699.203-1.35.233-.653.03-.856.036-2.513.036s-1.86-.006-2.513-.036c-.651-.03-1.098-.14-1.35-.233a2.31 2.31 0 0 1-.84-.532 2.31 2.31 0 0 1-.532-.84c-.093-.252-.203-.699-.233-1.35C3.006 9.86 3 9.657 3 8s.006-1.86.036-2.513c.03-.651.14-1.098.233-1.35.125-.34.275-.583.532-.84.257-.257.5-.407.84-.532.252-.093.699-.203 1.35-.233C6.14 3.006 6.343 3 8 3z"/>
                     </svg>
                     Instagram
                 </a>
 
                 <a href="https://facebook.com/bitandfix" target="_blank" rel="noopener" class="footer-item d-flex align-items-center gap-2">
-                    <svg width="22" height="22" fill="white" viewBox="0 0 16 16">
+                    <svg svg width="22" height="22" viewBox="0 0 16 16" 
+                        class="footer-icon footer-icon-facebook">
                         <path d="M8.94 6.5H10.5V4H8.94C7.64 4 7 4.67 7 5.94V7H5v2.5h2v6h2.5v-6h2.06L12 7H9.5V6.06c0-.34.28-.56.56-.56z"/>
                     </svg>
                     Facebook

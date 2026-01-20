@@ -1,0 +1,112 @@
+@use "../utilities/variables" as vars;
+
+/*HEADER FIJO*/
+.header-fijo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050;
+
+  background: linear-gradient(
+  180deg,
+  vars.$color-nav 0%,
+  lighten(vars.$color-nav, 25%) 100%
+);
+
+  padding: 6px 0;
+  height: auto;
+  box-shadow: vars.$shadow-sm;
+}
+
+@media (max-width: vars.$bp-sm) {
+  .header-fijo {
+    padding: 4px 0;
+  }
+}
+
+/*NAVEGACIÓN*/
+.nav-pills .nav-link {
+  color: white !important;
+  opacity: 0.8;
+  transition: vars.$transition-base;
+}
+
+.nav-pills .nav-link:hover {
+  color: lighten(vars.$color-primario, 10%) !important;
+  opacity: 1;
+}
+
+.nav-pills .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white !important;
+}
+
+@media (max-width: vars.$bp-sm) {
+  .nav-pills .nav-link {
+    padding: 4px 6px;
+    font-size: 0.85rem;
+  }
+}
+
+/*MAIN GENERAL*/
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: vars.$sp-4;
+}
+
+/*FOOTER*/
+footer {
+  background: linear-gradient(
+  180deg,
+  lighten(vars.$color-nav, 25%) 0%,
+  vars.$color-nav 100%
+) !important;
+
+  color: white !important;
+  padding: 35px 0;
+  text-align: center;
+  margin-top: vars.$sp-6;
+}
+
+footer,
+footer a,
+footer i {
+  color: white !important;
+}
+
+footer a:hover,
+footer i:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+/* Colores de marca para los íconos del footer */
+.footer-icon-mail {
+  fill: #ffffff !important;   // blanco, queda bien sobre el gradient
+}
+
+.footer-icon-whatsapp {
+  fill: #25D366 !important;   // verde oficial de WhatsApp
+}
+
+.footer-icon-instagram {
+  fill: #E1306C !important;   // rosa/magenta típico de Instagram
+}
+
+.footer-icon-facebook {
+  fill: #1877F2 !important;   // azul oficial de Facebook
+}
+/* Animación sutil para íconos del footer */
+.footer-item svg {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-item:hover svg {
+  transform: translateY(-3px) scale(1.1);
+  opacity: 0.9;
+}
+
+main {
+  padding-top: 120px;
+}
