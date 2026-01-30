@@ -1,0 +1,21 @@
+/*BOTONES PERSONALIZADOS*/
+.btn-primary {
+  background-color: vars.$color-nav;
+  border-color: vars.$color-nav;
+  transition: vars.$transition-base;
+
+  &:hover {
+    background-color: darken(vars.$color-nav, 8%);
+    border-color: darken(vars.$color-nav, 8%);
+  }
+}
+
+.btn-outline-primary {
+  color: vars.$color-nav;
+  border-color: vars.$color-nav;
+
+  &:hover {
+    background-color: vars.$color-nav;
+    color: white;
+  }
+}

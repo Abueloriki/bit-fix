@@ -1,0 +1,19 @@
+/*ASIDES*/
+aside { border-radius: vars.$radius-md; }
+
+.dato-curioso { border-left: 4px solid vars.$color-nav; }
+
+aside .card {
+  width: fit-content;       // la card se ajusta al contenido
+  margin: 0 auto;           // centrada en el aside
+  text-align: center;       // centra el contenido interno
+}
+
+aside .card img.img-vertical {
+  display: block;
+  margin: 0 auto;
+  max-width: 250px;         // ajusta el tamaño máximo de la imagen
+  height: auto;
+  border-radius: vars.$radius-md;
+  box-shadow: vars.$shadow-sm;
+}

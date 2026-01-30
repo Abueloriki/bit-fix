@@ -1,0 +1,10 @@
+/*ENLACES*/
+a {
+  color: vars.$color-nav;
+  text-decoration: none;
+  transition: vars.$transition-base;
+
+  &:hover {
+    color: darken(vars.$color-nav, 10%);
+  }
+}

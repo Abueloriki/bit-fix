@@ -1,0 +1,9 @@
+/*UTILIDADES GLOBALES*/
+.shadow-sm { box-shadow: vars.$shadow-sm; }
+.shadow-md { box-shadow: vars.$shadow-md; }
+.shadow-lg { box-shadow: vars.$shadow-lg; }
+
+.text-primary { color: vars.$color-nav !important; }
+.bg-light { background-color: vars.$gris-100 !important; }
+.rounded { border-radius: vars.$radius-md !important; }
+.border-primary { border-color: vars.$color-nav !important; }

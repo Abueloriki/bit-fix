@@ -1,0 +1,18 @@
+/*IMÁGENES ESPECIALES*/
+.img-index,
+.img-contacto,
+.img-nosotros,
+.img-vertical {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

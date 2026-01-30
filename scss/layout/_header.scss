@@ -1,0 +1,24 @@
+/*HEADER FIJO*/
+.header-fijo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050;
+
+  background: linear-gradient(
+  180deg,
+  vars.$color-nav 0%,
+  lighten(vars.$color-nav, 25%) 100%
+);
+
+  padding: 6px 0;
+  height: auto;
+  box-shadow: vars.$shadow-sm;
+}
+
+@media (max-width: vars.$bp-sm) {
+  .header-fijo {
+    padding: 4px 0;
+  }
+}

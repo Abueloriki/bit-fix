@@ -1,0 +1,23 @@
+/*NAVEGACIÓN*/
+.nav-pills .nav-link {
+  color: white !important;
+  opacity: 0.8;
+  transition: vars.$transition-base;
+}
+
+.nav-pills .nav-link:hover {
+  color: lighten(vars.$color-primario, 10%) !important;
+  opacity: 1;
+}
+
+.nav-pills .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white !important;
+}
+
+@media (max-width: vars.$bp-sm) {
+  .nav-pills .nav-link {
+    padding: 4px 6px;
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,40 @@
+/*EQUIPO (INDEX)*/
+.equipo-foto {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: vars.$radius-md;
+}
+
+.img-nosotros-mini {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: vars.$radius-md;
+  display: block;
+  margin: 0 auto;
+}
+
+.nosotros-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.imagenes-historicas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; // separación entre imágenes
+}
+
+.img-nosotros-mini {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: vars.$radius-md;
+}
