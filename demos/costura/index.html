@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hilo &amp; Aguja | Demo de Bit&amp;Fix</title>
+  <meta name="description" content="Página de ejemplo para negocios de costura hecha por Bit&amp;Fix: arreglos con precios, cómo trabajamos y pedido por WhatsApp.">
+  <meta name="robots" content="noindex">
+  <meta property="og:title" content="Demo: página web para negocio de costura">
+  <meta property="og:description" content="Así puede verse la web de tu negocio. Hecha por Bit&amp;Fix.">
+  <meta property="og:image" content="https://bit-fix.vercel.app/img/demos/costura.jpg">
+  <link rel="icon" href="../../img/marca/favicon-48.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,600;1,700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../demo.css">
+  <link rel="stylesheet" href="../kit.css">
+  <style>
+    :root { --bg: #fbfaf6; --surface: #ffffff; --soft: #eef1e9; --ink: #26302a; --muted: #66705f; --line: #dfe3d6; --brand: #4f6b4a; --brand-ink: #ffffff; --accent: #c8693f; --accent-ink: #ffffff; --hero-bg: radial-gradient(60% 70% at 80% 45%, #dfe8d6, transparent 70%), #f6f4ec; --hero-ink: #26302a; --hero-muted: #66705f; --dark: #2f3d30; --dark-ink: #fff; --dark-muted: #c9d3c0; --tile: #e7ecdf; --tile-ink: #4f6b4a; --head: "Lora", Georgia, serif; --head-weight: 700; --top-bg: rgba(251,250,246,.95); --top-solid: #fbfaf6; --radius: 16px; }
+    .k-hero h1 em { color: #c8693f; } .btn--line { color: #4f6b4a; } .k-strip span::before { content: "✂ "; color: #f3c5ad; }
+  </style>
+</head>
+<body data-rubro="negocio de costura">
+
+  <header class="k-top">
+    <div class="wrap k-top__in">
+      <a href="#" class="k-logo" aria-label="Hilo &amp; Aguja"><svg style="color:#c8693f" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8h32v6H16z M16 50h32v6H16z"/><path d="M20 14h24v36H20z M20 22h24 M20 30h24 M20 38h24"/></g></svg><span>Hilo &amp; Aguja<small>Arreglos y confección</small></span></a>
+      <button class="d-menu-btn" aria-label="Menú" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="d-nav"><a href="#arreglos">Arreglos</a><a href="#como">Cómo trabajamos</a><a href="#ubicacion">Ubicación</a><a href="#pedido" class="btn btn--accent btn--sm">Pedir arreglo</a></nav>
+    </div>
+  </header>
+  <main>
+    <section class="k-hero">
+      <div class="wrap k-hero__in">
+        <div>
+          <p class="eyebrow">Costura · Córdoba</p>
+          <h1>Tu ropa,<br><em>a tu medida.</em></h1>
+          <p class="k-hero__lead">Ruedos, cierres, ajustes y confección a medida. Traé tu prenda o pedí que la pasemos a buscar.</p>
+          <div class="k-hero__cta">
+            <a href="#pedido" class="btn btn--accent">Pedir arreglo</a>
+            <a href="#arreglos" class="btn btn--line">Ver precios</a>
+          </div>
+          <ul class="k-hero__notes"><li>Arreglos en 48 horas</li><li>Retiro y entrega</li><li>Confección a medida</li></ul>
+        </div>
+        <div class="k-hero__art"><svg viewBox="0 0 420 380" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="215" cy="190" r="168" fill="none" stroke="#9fb595" stroke-width="2" stroke-dasharray="6 10" opacity=".7"/><circle cx="215" cy="190" r="132" fill="#dfe8d6"/><svg x="125" y="100" width="180" height="180" viewBox="0 0 64 64" style="color:#4f6b4a"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="46" r="8"/><circle cx="48" cy="46" r="8"/><path d="M21 40L46 8 M43 40L18 8"/></g></svg><circle cx="70" cy="90" r="52" fill="#c8693f"/><svg x="40" y="60" width="60" height="60" viewBox="0 0 64 64" style="color:#ffffff"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 52L50 14"/><ellipse cx="51" cy="13" rx="4" ry="2" transform="rotate(-45 51 13)"/><path d="M48 16c-14 2-22 14-30 22s-10 6-12 2"/></g></svg><circle cx="355" cy="300" r="52" fill="#c8693f"/><svg x="325" y="270" width="60" height="60" viewBox="0 0 64 64" style="color:#ffffff"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8h32v6H16z M16 50h32v6H16z"/><path d="M20 14h24v36H20z M20 22h24 M20 30h24 M20 38h24"/></g></svg><circle cx="370" cy="70" r="10" fill="#c8693f"/><circle cx="60" cy="300" r="14" fill="#dfe8d6"/></svg></div>
+      </div>
+    </section>
+    <div class="k-strip"><div class="wrap k-strip__in"><span>Ruedos</span><span>Cierres</span><span>Ajustes</span><span>Confección</span><span>Uniformes</span></div></div>
+    <section class="k-sec" id="arreglos">
+      <div class="wrap"><div class="k-head"><p class="eyebrow">Arreglos</p><h2>Precios claros</h2><p class="muted">Precios de ejemplo. Te confirmamos el valor final al ver la prenda.</p></div><ul class="k-svc"><li><span class="ico"><svg viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8h32l4 48H38L32 24l-6 32H12z"/><path d="M16 16h32"/></g></svg></span><div><h3>Ruedo de pantalón</h3><p>Con terminación prolija.</p></div><b>$ 4.500</b></li><li><span class="ico"><svg viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8h32l4 48H38L32 24l-6 32H12z"/><path d="M16 16h32"/></g></svg></span><div><h3>Ruedo de jean</h3><p>Respetando el ruedo original.</p></div><b>$ 6.500</b></li><li><span class="ico"><svg viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M32 6v52"/><path d="M26 12h6 M32 18h6 M26 24h6 M32 30h6 M26 36h6"/><rect x="26" y="40" width="12" height="16" rx="3"/></g></svg></span><div><h3>Cambio de cierre</h3><p>Pantalón, campera o vestido.</p></div><b>$ 7.000</b></li><li><span class="ico"><svg viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 40L40 8l16 16-32 32z"/><path d="M18 30l5 5 M24 24l3 3 M30 18l5 5 M36 12l3 3"/></g></svg></span><div><h3>Ajuste de cintura</h3><p>Agrandar o achicar.</p></div><b>$ 6.000</b></li><li><span class="ico"><svg viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6v8l-6 10h28l-6-10V6 M18 24L8 56h48L46 24"/></g></svg></span><div><h3>Achicar vestido o camisa</h3><p>Toma de medidas incluida.</p></div><b>desde $ 9.000</b></li><li><span class="ico"><svg viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M22 8l-14 8 6 12 6-3v31h24V25l6 3 6-12-14-8-10 10z"/><path d="M32 18v36 M28 26h2 M28 36h2 M28 46h2"/></g></svg></span><div><h3>Confección a medida</h3><p>Vestidos, uniformes y más.</p></div><b>Consultar</b></li></ul></div>
+    </section>
+    <section class="k-sec k-sec--dark" id="como">
+      <div class="wrap"><div class="k-head"><p class="eyebrow">Cómo trabajamos</p><h2>Simple y sin vueltas</h2></div><ol class="k-steps"><li><b>Traés la prenda</b><span>O la pasamos a buscar por tu casa.</span></li><li><b>Te medimos</b><span>Probamos y marcamos el arreglo con vos.</span></li><li><b>Te avisamos</b><span>Por WhatsApp, cuando está lista.</span></li><li><b>Retirás</b><span>Pagás al retirar, efectivo o transferencia.</span></li></ol></div>
+    </section>
+    <section class="k-sec" id="pedido">
+      <div class="wrap k-split">
+        <div><p class="eyebrow">Pedido</p><h2>Pedí tu arreglo</h2><p class="muted">Contanos qué necesitás y te respondemos con precio y fecha de entrega.</p><ul class="k-bullets"><li>Respuesta en el día</li><li>Entrega en 48 horas</li><li>Retiro a domicilio en el barrio</li></ul></div>
+        <form class="k-form" data-template="Hola! Soy {nombre}. Necesito un arreglo de {arreglo} en {prenda}.\nEntrega: {entrega}\nDetalle: {detalle}"><label for="f-nombre">Tu nombre</label><input id="f-nombre" name="nombre" type="text" required placeholder="Ej.: Graciela"><label for="f-prenda">Prenda</label><select id="f-prenda" name="prenda"><option>Pantalón</option><option>Jean</option><option>Vestido</option><option>Camisa</option><option>Campera</option><option>Otra</option></select><label for="f-arreglo">Arreglo</label><select id="f-arreglo" name="arreglo"><option>Ruedo</option><option>Cierre</option><option>Ajuste</option><option>Confección a medida</option><option>Otro</option></select><label for="f-entrega">¿Cómo la acercás?</label><select id="f-entrega" name="entrega"><option>La llevo al local</option><option>Que la pasen a buscar</option></select><label for="f-detalle">Detalle</label><textarea id="f-detalle" name="detalle" rows="3" placeholder="Ej.: acortar 3 cm"></textarea><button class="btn btn--accent btn--block" type="submit">Enviar pedido por WhatsApp</button></form>
+      </div>
+    </section>
+    <section class="k-sec k-sec--soft" id="ubicacion">
+      <div class="wrap k-info">
+        <div><p class="eyebrow">Ubicación</p><h2>Dónde estamos</h2>
+          <p class="muted">Calle Ejemplo 852, Córdoba Capital (dirección ficticia).</p>
+          <table class="k-hours"><tr><td>Lunes a viernes</td><td>9:00 a 18:00</td></tr><tr><td>Sábados</td><td>9:00 a 12:00</td></tr></table></div>
+        <div class="k-map"><iframe title="Mapa de ejemplo" src="https://www.google.com/maps?q=C%C3%B3rdoba%20Capital&amp;output=embed" loading="lazy"></iframe></div>
+      </div>
+    </section>
+  </main>
+  <footer class="k-foot">
+    <div class="wrap k-foot__in"><span><b>Hilo &amp; Aguja</b> · Arreglos y confección</span><span>Demo diseñada por <a href="../../">Bit&amp;Fix</a></span></div>
+  </footer>
+
+  <a class="wa" href="#" data-demo-msg="Hola! ¿Hacen ruedos de jean en el día?" aria-label="WhatsApp del negocio"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 4h28a7 7 0 0 1 7 7v20a7 7 0 0 1-7 7H20l-10 8v-8a7 7 0 0 1-7-7V11a7 7 0 0 1 7-7z" fill="#fff"/><path d="M17.5 11.5c.6 0 1 .2 1.3.9l1.7 4c.2.5.1.9-.2 1.3l-1.3 1.5c-.3.3-.3.8 0 1.1 1.4 2.4 3.4 4.3 5.8 5.6.4.2.8.2 1.1-.1l1.6-1.4c.4-.3.8-.3 1.2-.2l4 1.8c.7.3.9.9.8 1.5-.4 2.2-2.4 3.8-4.6 3.6-7.6-.6-14.6-7.5-15.2-15-.2-2.3 1-4.4 3-4.6z" fill="#16a34a"/></svg></a>
+
+  <script src="../demo.js"></script>
+  <script>window.KIT = {"icons": {}, "products": null, "cart": null};</script>
+  <script src="../kit.js"></script>
+</body>
+</html>

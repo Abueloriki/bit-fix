@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Espiga | Demo de Bit&amp;Fix</title>
+  <meta name="description" content="Página de ejemplo para panaderías hecha por Bit&amp;Fix: catálogo con pedidos por WhatsApp y encargo de tortas.">
+  <meta name="robots" content="noindex">
+  <meta property="og:title" content="Demo: página web para panadería">
+  <meta property="og:description" content="Así puede verse la web de tu negocio. Hecha por Bit&amp;Fix.">
+  <meta property="og:image" content="https://bit-fix.vercel.app/img/demos/panaderia.jpg">
+  <link rel="icon" href="../../img/marca/favicon-48.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,600;1,700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../demo.css">
+  <link rel="stylesheet" href="../kit.css">
+  <style>
+    :root { --bg: #fffaf2; --surface: #ffffff; --soft: #f7ecd9; --ink: #3b2414; --muted: #7a5b45; --line: #eadcc5; --brand: #6b3a1e; --brand-ink: #fff7ea; --accent: #e09f3e; --accent-ink: #3b2414; --hero-bg: radial-gradient(70% 80% at 80% 40%, #f6d9a8, transparent 70%), #fbf1df; --hero-ink: #3b2414; --hero-muted: #7a5b45; --dark: #3b2414; --dark-ink: #fff7ea; --dark-muted: #d9c3a5; --tile: #f6e6cc; --tile-ink: #8a4b22; --head: "Lora", Georgia, serif; --head-weight: 700; --top-bg: rgba(255,250,242,.95); --top-solid: #fffaf2; --radius: 18px; }
+    .k-hero h1 em { color: #b45f1c; } .btn--line { color: #6b3a1e; } .eyebrow { color: #b45f1c; }
+  </style>
+</head>
+<body data-rubro="panadería">
+
+  <header class="k-top">
+    <div class="wrap k-top__in">
+      <a href="#" class="k-logo" aria-label="La Espiga"><svg style="color:#e09f3e" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 36c0-12 11-20 24-20s24 8 24 20v8a4 4 0 0 1-4 4H12a4 4 0 0 1-4-4z"/><path d="M22 26l-4 8 M32 24l-3 9 M42 26l-3 8"/></g></svg><span>La Espiga<small>Panadería artesanal</small></span></a>
+      <button class="d-menu-btn" aria-label="Menú" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="d-nav"><a href="#productos">Productos</a><a href="#tortas">Tortas</a><a href="#ubicacion">Ubicación</a><a href="#productos" class="btn btn--accent btn--sm">Hacer pedido</a></nav>
+    </div>
+  </header>
+  <main>
+    <section class="k-hero">
+      <div class="wrap k-hero__in">
+        <div>
+          <p class="eyebrow">Panadería artesanal · Córdoba</p>
+          <h1>Pan del día,<br><em>recién salido del horno.</em></h1>
+          <p class="k-hero__lead">Masa madre, facturas y tortas caseras. Hacé tu pedido por WhatsApp y retiralo calentito.</p>
+          <div class="k-hero__cta">
+            <a href="#productos" class="btn btn--accent">Hacer pedido</a>
+            <a href="#tortas" class="btn btn--line">Encargar torta</a>
+          </div>
+          <ul class="k-hero__notes"><li>Horneamos desde las 6</li><li>Pedidos hasta las 20</li><li>Envíos en el barrio</li></ul>
+        </div>
+        <div class="k-hero__art"><svg viewBox="0 0 420 380" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="215" cy="190" r="168" fill="none" stroke="#c98a45" stroke-width="2" stroke-dasharray="6 10" opacity=".7"/><circle cx="215" cy="190" r="132" fill="#f3cf93"/><svg x="125" y="100" width="180" height="180" viewBox="0 0 64 64" style="color:#6b3a1e"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 36c0-12 11-20 24-20s24 8 24 20v8a4 4 0 0 1-4 4H12a4 4 0 0 1-4-4z"/><path d="M22 26l-4 8 M32 24l-3 9 M42 26l-3 8"/></g></svg><circle cx="70" cy="90" r="52" fill="#6b3a1e"/><svg x="40" y="60" width="60" height="60" viewBox="0 0 64 64" style="color:#f6d9a8"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 40c4-14 14-22 26-22s22 8 26 22c-6-4-10-4-14-2-3-6-7-9-12-9s-9 3-12 9c-4-2-8-2-14 2z"/><path d="M26 30l2 9 M38 30l-2 9"/></g></svg><circle cx="355" cy="300" r="52" fill="#6b3a1e"/><svg x="325" y="270" width="60" height="60" viewBox="0 0 64 64" style="color:#f6d9a8"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M10 52h44 M14 52V34h36v18 M14 40c6 4 10-4 18 0s12-4 18 0"/><path d="M32 34V24 M32 16c3 3 3 6 0 8-3-2-3-5 0-8z"/></g></svg><circle cx="370" cy="70" r="10" fill="#6b3a1e"/><circle cx="60" cy="300" r="14" fill="#f3cf93"/></svg></div>
+      </div>
+    </section>
+    <div class="k-strip"><div class="wrap k-strip__in"><span>Pan de masa madre</span><span>Facturas</span><span>Tortas</span><span>Budines</span><span>Prepizzas</span></div></div>
+    <section class="k-sec" id="productos">
+      <div class="wrap"><div class="k-head"><p class="eyebrow">Productos</p><h2>Elegí y armá tu pedido</h2><p class="muted">Precios de ejemplo. Tocá + para sumar al pedido.</p></div><div id="k-catalog"></div></div>
+    </section>
+    <section class="k-sec k-sec--soft" id="tortas">
+      <div class="wrap k-split">
+        <div><p class="eyebrow">Tortas</p><h2>Encargá tu torta</h2><p class="muted">Para cumpleaños, aniversarios o porque sí. Pedila con 48 horas de anticipación.</p><ul class="k-bullets"><li>Decoración personalizada</li><li>Opciones sin TACC</li><li>Te confirmamos precio por WhatsApp</li></ul></div>
+        <form class="k-form" data-template="Hola! Soy {nombre}. Quiero encargar una torta {sabor} de {porciones}.\nFecha: {fecha}\nDetalle: {detalle}"><label for="f-nombre">Tu nombre</label><input id="f-nombre" name="nombre" type="text" required placeholder="Ej.: Carla"><label for="f-sabor">Sabor</label><select id="f-sabor" name="sabor"><option>Chocotorta</option><option>Selva negra</option><option>Frutilla y crema</option><option>Lemon pie</option><option>Rogel</option></select><label for="f-porciones">Porciones</label><select id="f-porciones" name="porciones"><option>8 porciones</option><option>12 porciones</option><option>20 porciones</option></select><label for="f-fecha">¿Para cuándo?</label><input id="f-fecha" name="fecha" type="date"><label for="f-detalle">Detalle o decoración</label><textarea id="f-detalle" name="detalle" rows="3" placeholder="Ej.: que diga Feliz cumple Sofi"></textarea><button class="btn btn--accent btn--block" type="submit">Encargar por WhatsApp</button></form>
+      </div>
+    </section>
+    <section class="k-sec k-sec--soft" id="ubicacion">
+      <div class="wrap k-info">
+        <div><p class="eyebrow">Ubicación</p><h2>Dónde estamos</h2>
+          <p class="muted">Calle Ejemplo 321, Córdoba Capital (dirección ficticia).</p>
+          <table class="k-hours"><tr><td>Lunes a sábado</td><td>6:30 a 21:00</td></tr><tr><td>Domingos</td><td>7:00 a 13:00</td></tr></table></div>
+        <div class="k-map"><iframe title="Mapa de ejemplo" src="https://www.google.com/maps?q=C%C3%B3rdoba%20Capital&amp;output=embed" loading="lazy"></iframe></div>
+      </div>
+    </section>
+  </main>
+  <footer class="k-foot">
+    <div class="wrap k-foot__in"><span><b>La Espiga</b> · Panadería artesanal</span><span>Demo diseñada por <a href="../../">Bit&amp;Fix</a></span></div>
+  </footer>
+
+  <a class="wa" href="#" data-demo-msg="Hola! ¿Hoy tienen pan de masa madre?" aria-label="WhatsApp del negocio"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 4h28a7 7 0 0 1 7 7v20a7 7 0 0 1-7 7H20l-10 8v-8a7 7 0 0 1-7-7V11a7 7 0 0 1 7-7z" fill="#fff"/><path d="M17.5 11.5c.6 0 1 .2 1.3.9l1.7 4c.2.5.1.9-.2 1.3l-1.3 1.5c-.3.3-.3.8 0 1.1 1.4 2.4 3.4 4.3 5.8 5.6.4.2.8.2 1.1-.1l1.6-1.4c.4-.3.8-.3 1.2-.2l4 1.8c.7.3.9.9.8 1.5-.4 2.2-2.4 3.8-4.6 3.6-7.6-.6-14.6-7.5-15.2-15-.2-2.3 1-4.4 3-4.6z" fill="#16a34a"/></svg></a>
+
+  <script src="../demo.js"></script>
+  <script>window.KIT = {"icons": {"pan": "<svg viewBox=\"0 0 64 64\" aria-hidden=\"true\"><g fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 36c0-12 11-20 24-20s24 8 24 20v8a4 4 0 0 1-4 4H12a4 4 0 0 1-4-4z\"/><path d=\"M22 26l-4 8 M32 24l-3 9 M42 26l-3 8\"/></g></svg>", "medialuna": "<svg viewBox=\"0 0 64 64\" aria-hidden=\"true\"><g fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 40c4-14 14-22 26-22s22 8 26 22c-6-4-10-4-14-2-3-6-7-9-12-9s-9 3-12 9c-4-2-8-2-14 2z\"/><path d=\"M26 30l2 9 M38 30l-2 9\"/></g></svg>", "galleta": "<svg viewBox=\"0 0 64 64\" aria-hidden=\"true\"><g fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"32\" cy=\"32\" r=\"22\"/><circle cx=\"24\" cy=\"26\" r=\"2.5\"/><circle cx=\"38\" cy=\"24\" r=\"2.5\"/><circle cx=\"40\" cy=\"38\" r=\"2.5\"/><circle cx=\"26\" cy=\"40\" r=\"2.5\"/></g></svg>", "budin": "<svg viewBox=\"0 0 64 64\" aria-hidden=\"true\"><g fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 28h44l-4 24H14z\"/><path d=\"M10 28c2-8 8-12 22-12s20 4 22 12 M20 22c2 3 6 3 8 0 4 3 8 3 10 0\"/></g></svg>", "chipa": "<svg viewBox=\"0 0 64 64\" aria-hidden=\"true\"><g fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"22\" cy=\"36\" r=\"12\"/><circle cx=\"42\" cy=\"32\" r=\"12\"/><path d=\"M18 34h2 M26 38h2 M38 30h2 M46 34h2\"/></g></svg>", "pizza": "<svg viewBox=\"0 0 64 64\" aria-hidden=\"true\"><g fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M32 8L8 52c16 6 32 6 48 0z\"/><circle cx=\"30\" cy=\"34\" r=\"3\"/><circle cx=\"38\" cy=\"44\" r=\"3\"/><circle cx=\"24\" cy=\"46\" r=\"3\"/></g></svg>", "alfajor": "<svg viewBox=\"0 0 64 64\" aria-hidden=\"true\"><g fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><ellipse cx=\"32\" cy=\"26\" rx=\"22\" ry=\"8\"/><path d=\"M10 26v8c0 4 10 8 22 8s22-4 22-8v-8 M10 34v6c0 4 10 8 22 8s22-4 22-8v-6\"/></g></svg>", "torta": "<svg viewBox=\"0 0 64 64\" aria-hidden=\"true\"><g fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 52h44 M14 52V34h36v18 M14 40c6 4 10-4 18 0s12-4 18 0\"/><path d=\"M32 34V24 M32 16c3 3 3 6 0 8-3-2-3-5 0-8z\"/></g></svg>"}, "products": [{"name": "Pan francés", "desc": "Crocante por fuera, tierno por dentro.", "price": 3200, "unit": "el kg", "cat": "Panes", "icon": "pan", "tag": "Recién horneado"}, {"name": "Pan de masa madre", "desc": "Fermentación lenta de 24 horas.", "price": 6500, "cat": "Panes", "icon": "pan", "tile": "#efd7b0"}, {"name": "Medialunas de manteca", "desc": "La docena.", "price": 9000, "cat": "Facturas", "icon": "medialuna", "tag": "Más pedido"}, {"name": "Facturas surtidas", "desc": "La docena: vigilantes, bolas de fraile y más.", "price": 8500, "cat": "Facturas", "icon": "medialuna", "tile": "#f3dcc0"}, {"name": "Budín de limón", "desc": "Con glaseado casero.", "price": 7000, "cat": "Dulces", "icon": "budin"}, {"name": "Alfajores de maicena", "desc": "Caja por 6, con dulce de leche.", "price": 5500, "cat": "Dulces", "icon": "alfajor"}, {"name": "Chipá", "desc": "Medio kilo, con queso de verdad.", "price": 6000, "cat": "Salados", "icon": "chipa"}, {"name": "Prepizzas", "desc": "Pack por 2, listas para el horno.", "price": 4500, "cat": "Salados", "icon": "pizza"}], "cart": {"title": "Tu pedido", "delivery": ["Retiro en el local", "Envío en el barrio"], "intro": "Quiero hacer este pedido:"}};</script>
+  <script src="../kit.js"></script>
+</body>
+</html>
