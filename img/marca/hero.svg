@@ -1,0 +1,46 @@
+<svg viewBox="0 0 640 440" xmlns="http://www.w3.org/2000/svg">
+<defs>
+ <linearGradient id="scr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0c2f55"/><stop offset="1" stop-color="#071a30"/></linearGradient>
+ <linearGradient id="tw" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1b2a3d"/><stop offset="1" stop-color="#0d1828"/></linearGradient>
+ <radialGradient id="fan"><stop offset="0" stop-color="#4ade80" stop-opacity=".95"/><stop offset=".55" stop-color="#22c55e" stop-opacity=".55"/><stop offset="1" stop-color="#22c55e" stop-opacity="0"/></radialGradient>
+ <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<ellipse cx="320" cy="420" rx="300" ry="16" fill="#000" opacity=".35"/>
+<!-- monitor -->
+<rect x="20" y="40" width="400" height="260" rx="14" fill="#0e1b2c" stroke="#2c4a6e" stroke-width="3"/>
+<rect x="34" y="54" width="372" height="222" rx="6" fill="url(#scr)"/>
+<rect x="34" y="54" width="372" height="26" rx="6" fill="#0a2442"/>
+<circle cx="52" cy="67" r="5" fill="#ef4444"/><circle cx="68" cy="67" r="5" fill="#f59e0b"/><circle cx="84" cy="67" r="5" fill="#22c55e"/>
+<g stroke-linecap="round" stroke-width="9">
+ <line x1="60" y1="104" x2="150" y2="104" stroke="#22c55e"/><line x1="162" y1="104" x2="250" y2="104" stroke="#1e7fd9"/>
+ <line x1="84" y1="128" x2="200" y2="128" stroke="#7dd3fc"/><line x1="212" y1="128" x2="290" y2="128" stroke="#22c55e" opacity=".7"/>
+ <line x1="84" y1="152" x2="170" y2="152" stroke="#1e7fd9"/><line x1="182" y1="152" x2="330" y2="152" stroke="#94a3b8" opacity=".6"/>
+ <line x1="108" y1="176" x2="230" y2="176" stroke="#22c55e"/>
+ <line x1="108" y1="200" x2="190" y2="200" stroke="#7dd3fc"/><line x1="202" y1="200" x2="270" y2="200" stroke="#1e7fd9"/>
+ <line x1="84" y1="224" x2="160" y2="224" stroke="#94a3b8" opacity=".6"/>
+ <line x1="60" y1="248" x2="120" y2="248" stroke="#22c55e"/>
+</g>
+<text x="330" y="250" font-family="Inter Display,Inter,sans-serif" font-weight="900" font-size="54" fill="#22c55e" filter="url(#glow)">&lt;/&gt;</text>
+<path d="M190 300 h60 l14 70 h-88z" fill="#13243a"/>
+<rect x="150" y="366" width="140" height="14" rx="7" fill="#1d3352"/>
+<!-- tower -->
+<rect x="440" y="70" width="170" height="330" rx="14" fill="url(#tw)" stroke="#2c4a6e" stroke-width="3"/>
+<rect x="456" y="86" width="138" height="298" rx="8" fill="#0a1422" stroke="#22c55e" stroke-opacity=".5" stroke-width="2"/>
+<g filter="url(#glow)">
+ <circle cx="525" cy="150" r="44" fill="url(#fan)"/><circle cx="525" cy="150" r="38" fill="none" stroke="#4ade80" stroke-width="4"/>
+ <circle cx="525" cy="250" r="44" fill="url(#fan)"/><circle cx="525" cy="250" r="38" fill="none" stroke="#4ade80" stroke-width="4"/>
+</g>
+<g fill="#0a1422" opacity=".85">
+ <path d="M525 150 q22 -30 6 -36 q-10 10 -6 36z"/><path d="M525 150 q30 22 36 6 q-10 -10 -36 -6z"/><path d="M525 150 q-22 30 -6 36 q10 -10 6 -36z"/><path d="M525 150 q-30 -22 -36 -6 q10 10 36 6z"/>
+ <path d="M525 250 q22 -30 6 -36 q-10 10 -6 36z"/><path d="M525 250 q30 22 36 6 q-10 -10 -36 -6z"/><path d="M525 250 q-22 30 -6 36 q10 -10 6 -36z"/><path d="M525 250 q-30 -22 -36 -6 q10 10 36 6z"/>
+</g>
+<circle cx="525" cy="150" r="7" fill="#4ade80"/><circle cx="525" cy="250" r="7" fill="#4ade80"/>
+<rect x="476" y="318" width="98" height="8" rx="4" fill="#22c55e" opacity=".8"/>
+<rect x="476" y="336" width="70" height="8" rx="4" fill="#1e7fd9" opacity=".8"/>
+<circle cx="580" cy="364" r="7" fill="#22c55e" filter="url(#glow)"/>
+<!-- wrench badge -->
+<g transform="translate(372 300)">
+ <circle cx="0" cy="0" r="52" fill="#22c55e" stroke="#06162b" stroke-width="6" filter="url(#glow)"/>
+ <path transform="translate(-26 -26) scale(2.2)" d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z" fill="#fff"/>
+</g>
+</svg>
