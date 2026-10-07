@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuerza Gym | Demo de Bit&amp;Fix</title>
+  <meta name="description" content="Página de ejemplo para gimnasios hecha por Bit&Fix: planes, grilla de clases y clase de prueba por WhatsApp.">
+  <meta name="robots" content="noindex">
+  <meta property="og:title" content="Demo: página web para gimnasios">
+  <meta property="og:description" content="Así puede verse la web de tu gimnasio. Hecha por Bit&Fix.">
+  <meta property="og:image" content="https://bit-fix.vercel.app/img/demos/gimnasio.jpg">
+  <link rel="icon" href="../../img/marca/favicon-48.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,500;0,700;0,900;1,900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../demo.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-rubro="gimnasio">
+
+  <header class="top">
+    <div class="wrap top__in">
+      <a href="#" class="logo" aria-label="Fuerza Gym">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="16" width="6" height="16" rx="2"/><rect x="11" y="12" width="6" height="24" rx="2"/><rect x="17" y="22" width="14" height="4"/><rect x="31" y="12" width="6" height="24" rx="2"/><rect x="38" y="16" width="6" height="16" rx="2"/></svg>
+        <span>FUERZA<b>GYM</b></span>
+      </a>
+      <button class="d-menu-btn" aria-label="Menú" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="d-nav">
+        <a href="#actividades">Actividades</a>
+        <a href="#planes">Planes</a>
+        <a href="#clases">Clases</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#prueba" class="btn btn--hot btn--sm">Clase gratis</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero__in">
+        <p class="tag">Gimnasio · Córdoba</p>
+        <h1>Entrená<br><span>en serio.</span></h1>
+        <p class="hero__lead">Musculación, funcional, spinning y boxeo. Profes que te siguen de cerca y un plan para cada objetivo.</p>
+        <div class="hero__cta">
+          <a href="#prueba" class="btn btn--hot">Probá una clase gratis</a>
+          <a href="#planes" class="btn btn--line">Ver planes</a>
+        </div>
+      </div>
+      <div class="hero__stripes" aria-hidden="true"></div>
+    </section>
+
+    <div class="stats">
+      <div class="wrap stats__in">
+        <div><b>6 a 23</b><span>abierto todos los días hábiles</span></div>
+        <div><b>+40</b><span>clases por semana</span></div>
+        <div><b>4</b><span>profes con título</span></div>
+        <div><b>0</b><span>matrícula este mes</span></div>
+      </div>
+    </div>
+
+    <section class="section" id="actividades">
+      <div class="wrap">
+        <p class="tag tag--dark">Actividades</p>
+        <h2>Elegí cómo querés moverte</h2>
+        <div class="acts">
+          <article class="act act--1"><h3>Musculación</h3><p>Sala completa con máquinas, mancuernas y peso libre.</p></article>
+          <article class="act act--2"><h3>Funcional</h3><p>Circuitos en grupo, intensidad a tu ritmo.</p></article>
+          <article class="act act--3"><h3>Spinning</h3><p>45 minutos de música y bici. Quemás todo.</p></article>
+          <article class="act act--4"><h3>Boxeo</h3><p>Técnica, cardio y descarga. Desde cero.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="planes">
+      <div class="wrap">
+        <p class="tag">Planes</p>
+        <h2>Pagá solo lo que usás</h2>
+        <p class="muted">Precios de ejemplo, por mes.</p>
+        <div class="plans">
+          <article class="plan">
+            <h3>2 veces por semana</h3>
+            <p class="price">$ 25.000</p>
+            <ul><li>Musculación o funcional</li><li>Rutina armada por un profe</li></ul>
+            <a href="#" class="btn btn--line btn--block" data-demo-msg="Hola! Quiero info del plan 2 veces por semana.">Lo quiero</a>
+          </article>
+          <article class="plan plan--hot">
+            <span class="plan__badge">Más elegido</span>
+            <h3>Libre</h3>
+            <p class="price">$ 35.000</p>
+            <ul><li>Todas las actividades</li><li>Todos los días</li><li>Seguimiento mensual</li></ul>
+            <a href="#" class="btn btn--hot btn--block" data-demo-msg="Hola! Quiero info del plan Libre.">Lo quiero</a>
+          </article>
+          <article class="plan">
+            <h3>Personalizado</h3>
+            <p class="price">$ 60.000</p>
+            <ul><li>Profe exclusivo 3 veces por semana</li><li>Plan de alimentación</li></ul>
+            <a href="#" class="btn btn--line btn--block" data-demo-msg="Hola! Quiero info del plan Personalizado.">Lo quiero</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="clases">
+      <div class="wrap">
+        <p class="tag tag--dark">Grilla</p>
+        <h2>Clases de la semana</h2>
+        <div class="days" role="tablist" aria-label="Día de la semana"></div>
+        <ul class="classes" id="lista-clases"></ul>
+      </div>
+    </section>
+
+    <section class="section section--hot" id="prueba">
+      <div class="wrap trial">
+        <div>
+          <h2>Tu primera clase<br>es gratis</h2>
+          <p>Vení, conocé el lugar y probá la actividad que quieras. Sin compromiso.</p>
+        </div>
+        <form class="form" id="form-prueba">
+          <label for="p-nombre">Nombre</label>
+          <input id="p-nombre" name="nombre" required placeholder="Ej.: Sofía">
+          <label for="p-objetivo">Tu objetivo</label>
+          <select id="p-objetivo" name="objetivo">
+            <option>Bajar de peso</option><option>Ganar fuerza</option><option>Mejorar mi estado físico</option><option>Aprender boxeo</option>
+          </select>
+          <label for="p-actividad">Actividad para probar</label>
+          <select id="p-actividad" name="actividad">
+            <option>Musculación</option><option>Funcional</option><option>Spinning</option><option>Boxeo</option>
+          </select>
+          <button class="btn btn--dark btn--block" type="submit">Reservar clase gratis</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="ubicacion">
+      <div class="wrap place">
+        <div>
+          <p class="tag tag--dark">Ubicación</p>
+          <h2>Estamos cerca</h2>
+          <p class="muted">Calle Ejemplo 456, Córdoba Capital (dirección ficticia).</p>
+          <table class="hours">
+            <tr><td>Lunes a viernes</td><td>6:00 a 23:00</td></tr>
+            <tr><td>Sábados</td><td>9:00 a 18:00</td></tr>
+            <tr><td>Domingos y feriados</td><td>Cerrado</td></tr>
+          </table>
+        </div>
+        <div class="map"><iframe title="Mapa de ejemplo" src="https://www.google.com/maps?q=C%C3%B3rdoba%20Capital&output=embed" loading="lazy"></iframe></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__in">
+      <span class="logo">FUERZA<b>GYM</b></span>
+      <span>Demo diseñada por <a href="../../">Bit&amp;Fix</a></span>
+    </div>
+  </footer>
+
+  <a class="wa" href="#" data-demo-msg="Hola! Quería consultar por los planes del gimnasio." aria-label="WhatsApp del gimnasio">
+    <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 4h28a7 7 0 0 1 7 7v20a7 7 0 0 1-7 7H20l-10 8v-8a7 7 0 0 1-7-7V11a7 7 0 0 1 7-7z" fill="#fff"/><path d="M17.5 11.5c.6 0 1 .2 1.3.9l1.7 4c.2.5.1.9-.2 1.3l-1.3 1.5c-.3.3-.3.8 0 1.1 1.4 2.4 3.4 4.3 5.8 5.6.4.2.8.2 1.1-.1l1.6-1.4c.4-.3.8-.3 1.2-.2l4 1.8c.7.3.9.9.8 1.5-.4 2.2-2.4 3.8-4.6 3.6-7.6-.6-14.6-7.5-15.2-15-.2-2.3 1-4.4 3-4.6z" fill="#16a34a"/></svg>
+  </a>
+
+  <script src="../demo.js"></script>
+  <script>
+    // Grilla de clases de ejemplo
+    (function () {
+      const GRILLA = {
+        'Lun': [['07:00', 'Funcional', 'Caro'], ['09:00', 'Spinning', 'Nico'], ['18:00', 'Boxeo', 'Leo'], ['19:30', 'Funcional', 'Caro'], ['20:30', 'Spinning', 'Nico']],
+        'Mar': [['08:00', 'Funcional', 'Caro'], ['12:30', 'Spinning', 'Nico'], ['19:00', 'Boxeo', 'Leo'], ['20:00', 'Funcional', 'Mati']],
+        'Mié': [['07:00', 'Funcional', 'Caro'], ['09:00', 'Spinning', 'Nico'], ['18:00', 'Boxeo', 'Leo'], ['19:30', 'Funcional', 'Caro']],
+        'Jue': [['08:00', 'Funcional', 'Mati'], ['12:30', 'Spinning', 'Nico'], ['19:00', 'Boxeo', 'Leo'], ['20:00', 'Funcional', 'Mati']],
+        'Vie': [['07:00', 'Funcional', 'Caro'], ['18:00', 'Spinning', 'Nico'], ['19:00', 'Boxeo', 'Leo']],
+        'Sáb': [['10:00', 'Funcional', 'Mati'], ['11:00', 'Spinning', 'Nico']]
+      };
+      const days = document.querySelector('.days');
+      const list = document.getElementById('lista-clases');
+      const hoy = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'][new Date().getDay()];
+      let actual = GRILLA[hoy] ? hoy : 'Lun';
+      function render() {
+        days.innerHTML = Object.keys(GRILLA).map(function (d) {
+          return '<button type="button" role="tab" aria-selected="' + (d === actual) + '" class="' + (d === actual ? 'on' : '') + '">' + d + '</button>';
+        }).join('');
+        list.innerHTML = GRILLA[actual].map(function (c) {
+          return '<li><time>' + c[0] + '</time><div><b>' + c[1] + '</b><span>con ' + c[2] + '</span></div>' +
+            '<a href="#" class="btn btn--line-dark btn--sm" data-demo-msg="Hola! Quiero reservar lugar en ' + c[1] + ' del ' + actual + ' a las ' + c[0] + '.">Reservar</a></li>';
+        }).join('');
+      }
+      days.addEventListener('click', function (e) {
+        const b = e.target.closest('button'); if (!b) return;
+        actual = b.textContent; render();
+      });
+      render();
+      document.getElementById('form-prueba').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const f = e.target;
+        BitFixDemo.preview('Hola! Soy ' + f.nombre.value.trim() + '. Quiero reservar mi clase gratis de ' + f.actividad.value + '. Mi objetivo: ' + f.objetivo.value.toLowerCase() + '.');
+      });
+    })();
+  </script>
+</body>
+</html>

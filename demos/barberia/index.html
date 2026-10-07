@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navaja Barber Club | Demo de Bit&amp;Fix</title>
+  <meta name="description" content="Página de ejemplo para barberías hecha por Bit&Fix: servicios con precios, galería y reserva de turnos por WhatsApp.">
+  <meta name="robots" content="noindex">
+  <meta property="og:title" content="Demo: página web para barberías">
+  <meta property="og:description" content="Así puede verse la web de tu barbería. Hecha por Bit&Fix.">
+  <meta property="og:image" content="https://bit-fix.vercel.app/img/demos/barberia.jpg">
+  <link rel="icon" href="../../img/marca/favicon-48.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../demo.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-rubro="barbería">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-tijera" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><circle cx="16" cy="46" r="8"/><circle cx="48" cy="46" r="8"/><path d="M21 40 L46 8 M43 40 L18 8"/></g></symbol>
+    <symbol id="i-navaja" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"><path d="M10 40 L44 12 q8-3 8 5 L22 50 z"/><path d="M8 44 l10 10"/></g></symbol>
+    <symbol id="i-peine" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><rect x="8" y="16" width="48" height="10" rx="3"/><path d="M12 26v20M18 26v20M24 26v20M30 26v20M36 26v20M42 26v20M48 26v20M54 26v14"/></g></symbol>
+    <symbol id="i-maquina" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"><rect x="22" y="14" width="20" height="42" rx="8"/><path d="M20 8h24v8H20z M32 26v8"/></g></symbol>
+    <symbol id="i-sillon" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"><path d="M18 10h28v20H18z M12 30h40v10H12z M32 40v12 M20 56h24 M10 22v12 M54 22v12"/></g></symbol>
+  </svg>
+
+  <header class="top">
+    <div class="wrap top__in">
+      <a href="#" class="logo" aria-label="Navaja Barber Club">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 30 L34 8 q6 -2 6 4 L16 38 z" fill="currentColor" opacity=".9"/><rect x="6" y="32" width="18" height="7" rx="3.5" transform="rotate(-40 15 35)" fill="currentColor"/></svg>
+        <span>NAVAJA<small>Barber Club</small></span>
+      </a>
+      <button class="d-menu-btn" aria-label="Menú" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="d-nav">
+        <a href="#servicios">Servicios</a>
+        <a href="#trabajos">Trabajos</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#turnos" class="btn btn--gold btn--sm">Reservar turno</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero__in">
+        <p class="eyebrow">Barbería · Córdoba</p>
+        <h1>Cortes con oficio.<br><em>Barba con estilo.</em></h1>
+        <p class="hero__lead">Reservá tu turno en 30 segundos y olvidate de esperar. Café, buena música y un corte que te dura.</p>
+        <div class="hero__cta">
+          <a href="#turnos" class="btn btn--gold">Reservar turno</a>
+          <a href="#servicios" class="btn btn--line">Ver precios</a>
+        </div>
+        <ul class="hero__facts">
+          <li><strong>+10 años</strong> de oficio</li>
+          <li><strong>Café</strong> de cortesía</li>
+          <li><strong>Lun a Sáb</strong> con turno</li>
+        </ul>
+      </div>
+      <div class="hero__pole" aria-hidden="true"></div>
+    </section>
+
+    <section class="section" id="servicios">
+      <div class="wrap narrow">
+        <p class="eyebrow center">Servicios</p>
+        <h2 class="center">La carta</h2>
+        <p class="center muted">Precios de ejemplo. Todos los servicios incluyen lavado y peinado.</p>
+        <ul class="menu">
+          <li><div><h3>Corte clásico</h3><p>Tijera y máquina, terminación a navaja.</p></div><span class="dots"></span><b>$ 12.000</b></li>
+          <li><div><h3>Fade / degradé</h3><p>Desvanecido a medida, del 0 al que quieras.</p></div><span class="dots"></span><b>$ 14.000</b></li>
+          <li><div><h3>Perfilado de barba</h3><p>Toalla caliente, navaja y aceite.</p></div><span class="dots"></span><b>$ 9.000</b></li>
+          <li><div><h3>Corte + barba</h3><p>El combo completo. El más pedido.</p></div><span class="dots"></span><b>$ 19.000</b></li>
+          <li><div><h3>Corte infantil</h3><p>Hasta 12 años.</p></div><span class="dots"></span><b>$ 10.000</b></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="trabajos">
+      <div class="wrap">
+        <p class="eyebrow center">Trabajos</p>
+        <h2 class="center">Lo que sale del sillón</h2>
+        <p class="center muted">Acá van las fotos reales de la barbería (las sacamos juntos o las tomamos de tu Instagram).</p>
+        <div class="gallery">
+          <figure class="tile tile--1"><svg class="ico"><use href="#i-maquina"/></svg><span>Fade bajo</span></figure>
+          <figure class="tile tile--2"><svg class="ico"><use href="#i-navaja"/></svg><span>Barba completa</span></figure>
+          <figure class="tile tile--3"><svg class="ico"><use href="#i-peine"/></svg><span>Clásico con raya</span></figure>
+          <figure class="tile tile--4"><svg class="ico"><use href="#i-tijera"/></svg><span>Texturizado</span></figure>
+          <figure class="tile tile--5"><svg class="ico"><use href="#i-maquina"/></svg><span>Buzz cut</span></figure>
+          <figure class="tile tile--6"><svg class="ico"><use href="#i-sillon"/></svg><span>El local</span></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="equipo">
+      <div class="wrap">
+        <p class="eyebrow center">Equipo</p>
+        <h2 class="center">Quién te atiende</h2>
+        <div class="team">
+          <article><div class="avatar">M</div><h3>Matías</h3><p>Fundador. Especialista en fades y diseños.</p></article>
+          <article><div class="avatar">L</div><h3>Lucas</h3><p>Barbas, navaja y cortes clásicos.</p></article>
+          <article><div class="avatar">J</div><h3>Juli</h3><p>Cortes modernos y texturizados.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cream" id="turnos">
+      <div class="wrap booking">
+        <div>
+          <p class="eyebrow">Turnos</p>
+          <h2>Reservá tu turno</h2>
+          <p class="muted">Elegí servicio, día y horario. Te confirmamos por WhatsApp.</p>
+          <ul class="ticks">
+            <li>Sin esperas</li>
+            <li>Recordatorio el día anterior</li>
+            <li>Podés reprogramar sin costo</li>
+          </ul>
+        </div>
+        <form class="card-form" id="form-turno">
+          <label for="t-servicio">Servicio</label>
+          <select id="t-servicio" name="servicio">
+            <option>Corte clásico</option><option>Fade / degradé</option><option>Perfilado de barba</option><option selected>Corte + barba</option><option>Corte infantil</option>
+          </select>
+          <span class="label">Día</span>
+          <div class="chips" id="t-dias" role="radiogroup" aria-label="Día"></div>
+          <span class="label">Horario</span>
+          <div class="chips" id="t-horas" role="radiogroup" aria-label="Horario"></div>
+          <label for="t-nombre">Tu nombre</label>
+          <input id="t-nombre" name="nombre" required placeholder="Ej.: Franco">
+          <button class="btn btn--gold btn--block" type="submit">Pedir turno por WhatsApp</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="ubicacion">
+      <div class="wrap place">
+        <div>
+          <p class="eyebrow">Ubicación</p>
+          <h2>Pasá cuando quieras</h2>
+          <p class="muted">Calle Ejemplo 123, Córdoba Capital (dirección ficticia).</p>
+          <table class="hours">
+            <tr><td>Lunes a viernes</td><td>10:00 a 20:00</td></tr>
+            <tr><td>Sábados</td><td>9:00 a 14:00</td></tr>
+            <tr><td>Domingos</td><td>Cerrado</td></tr>
+          </table>
+          <a class="btn btn--line-dark" href="#" data-demo-msg="Hola! Quiero saber cómo llegar a la barbería 🙂">Cómo llegar</a>
+        </div>
+        <div class="map">
+          <iframe title="Mapa de ejemplo" src="https://www.google.com/maps?q=C%C3%B3rdoba%20Capital&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__in">
+      <span class="logo logo--sm">NAVAJA<small>Barber Club</small></span>
+      <span>Demo diseñada por <a href="../../">Bit&amp;Fix</a></span>
+    </div>
+  </footer>
+
+  <a class="wa" href="#" data-demo-msg="Hola! Quería consultar por un turno para mañana." aria-label="WhatsApp de la barbería">
+    <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 4h28a7 7 0 0 1 7 7v20a7 7 0 0 1-7 7H20l-10 8v-8a7 7 0 0 1-7-7V11a7 7 0 0 1 7-7z" fill="#fff"/><path d="M17.5 11.5c.6 0 1 .2 1.3.9l1.7 4c.2.5.1.9-.2 1.3l-1.3 1.5c-.3.3-.3.8 0 1.1 1.4 2.4 3.4 4.3 5.8 5.6.4.2.8.2 1.1-.1l1.6-1.4c.4-.3.8-.3 1.2-.2l4 1.8c.7.3.9.9.8 1.5-.4 2.2-2.4 3.8-4.6 3.6-7.6-.6-14.6-7.5-15.2-15-.2-2.3 1-4.4 3-4.6z" fill="#16a34a"/></svg>
+  </a>
+
+  <script src="../demo.js"></script>
+  <script>
+    // Días (próximos 6 días hábiles) y horarios de ejemplo
+    (function () {
+      const dias = document.getElementById('t-dias');
+      const horas = document.getElementById('t-horas');
+      const nombres = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
+      const d = new Date(); let n = 0;
+      while (n < 6) {
+        d.setDate(d.getDate() + 1);
+        if (d.getDay() === 0) continue;
+        const label = nombres[d.getDay()] + ' ' + d.getDate() + '/' + (d.getMonth() + 1);
+        dias.insertAdjacentHTML('beforeend', '<button type="button" class="chip' + (n === 0 ? ' on' : '') + '" role="radio" aria-checked="' + (n === 0) + '">' + label + '</button>');
+        n++;
+      }
+      ['10:00', '11:00', '12:30', '15:00', '16:30', '18:00', '19:00'].forEach(function (h, i) {
+        const ocupado = i === 1 || i === 4;
+        horas.insertAdjacentHTML('beforeend', '<button type="button" class="chip' + (i === 2 ? ' on' : '') + '"' + (ocupado ? ' disabled title="Ocupado"' : '') + ' role="radio" aria-checked="' + (i === 2) + '">' + h + '</button>');
+      });
+      [dias, horas].forEach(function (g) {
+        g.addEventListener('click', function (e) {
+          const b = e.target.closest('.chip'); if (!b || b.disabled) return;
+          g.querySelectorAll('.chip').forEach(function (c) { c.classList.remove('on'); c.setAttribute('aria-checked', 'false'); });
+          b.classList.add('on'); b.setAttribute('aria-checked', 'true');
+        });
+      });
+      document.getElementById('form-turno').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const f = e.target;
+        const dia = dias.querySelector('.on').textContent, hora = horas.querySelector('.on').textContent;
+        BitFixDemo.preview('Hola! Soy ' + f.nombre.value.trim() + '. Quiero reservar turno para ' + f.servicio.value + ' el ' + dia + ' a las ' + hora + ' hs. ¿Está disponible?');
+      });
+    })();
+  </script>
+</body>
+</html>
