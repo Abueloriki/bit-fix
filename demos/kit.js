@@ -38,9 +38,14 @@
         const sizes = p.sizes ? '<div class="k-sizes">' + p.sizes.map(function (s, j) { return '<button type="button" data-size="' + esc(s) + '" class="' + (j === 0 ? 'on' : '') + '">' + esc(s) + '</button>'; }).join('') + '</div>' : '';
         return '<article class="k-prod" data-i="' + i + '">' +
           '<div class="k-prod__art"' + (p.tile ? ' style="background:' + p.tile + '"' : '') + '>' + (icons[p.icon] || '') + (p.tag ? '<span class="k-prod__tag">' + esc(p.tag) + '</span>' : '') + '</div>' +
-          '<div class="k-prod__body"><h3>' + esc(p.name) + '</h3><p>' + esc(p.desc || '') + '</p>' + sizes +
+          '<div class="k-prod__body"><h3>' + esc(p.name) + '</h3>' +
+          (p.specs ? '<div class="k-specs">' + p.specs.map(function (x) { return '<span>' + esc(x) + '</span>'; }).join('') + '</div>' : '') +
+          '<p>' + esc(p.desc || '') + '</p>' + sizes +
           '<div class="k-prod__row"><span class="k-price">' + fmt(p.price) + (p.unit ? '<small style="font-size:.7em;opacity:.7"> ' + esc(p.unit) + '</small>' : '') + '</span>' +
-          '<button type="button" class="k-add" aria-label="Agregar ' + esc(p.name) + ' al pedido">+</button></div></div></article>';
+          (KIT.mode === 'consulta'
+            ? '</div><div class="k-prod__actions"><button type="button" class="btn btn--accent btn--sm" data-demo-msg="' + esc('Hola! Me interesa el ' + p.name + ' que vi en tu página. ¿Sigue disponible?') + '">Consultar</button>' +
+              (p.price ? '<button type="button" class="btn btn--line btn--sm k-sim" data-price="' + p.price + '">Simular cuotas</button>' : '') + '</div></div></article>'
+            : '<button type="button" class="k-add" aria-label="Agregar ' + esc(p.name) + ' al pedido">+</button></div></div></article>');
       }).join('');
     }
     filters.addEventListener('click', function (e) {
@@ -122,6 +127,36 @@
     });
   }
 
+  // ---------- "Simular cuotas" desde una unidad del catálogo ----------
+  document.addEventListener('click', function (e) {
+    const b = e.target.closest('.k-sim'); if (!b) return;
+    const f = document.querySelector('form[data-loan]'); if (!f) return;
+    f.elements.precio.value = b.dataset.price;
+    f.dispatchEvent(new Event('change'));
+    f.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+
+  // ---------- simulador de préstamo: <form data-loan='{"tna":0.45}'> ----------
+  document.querySelectorAll('form[data-loan]').forEach(function (f) {
+    const cfg = JSON.parse(f.dataset.loan);
+    function calc() {
+      const precio = Math.max(0, parseFloat(f.elements.precio.value) || 0);
+      const anticipo = parseFloat(f.elements.anticipo.value) / 100 || 0;
+      const n = parseInt(f.elements.cuotas.value, 10) || 12;
+      const capital = precio * (1 - anticipo);
+      const r = cfg.tna / 12;
+      const cuota = capital > 0 ? (r ? capital * r / (1 - Math.pow(1 + r, -n)) : capital / n) : 0;
+      f.dataset.financiado = fmt(Math.round(capital));
+      f.dataset.cuota = fmt(Math.round(cuota / 100) * 100);
+      f.dataset.adelanto = fmt(Math.round(precio * anticipo));
+      f.dataset.valor = fmt(Math.round(precio));
+      const out = f.querySelector('.k-quote b'); if (out) out.textContent = f.dataset.cuota;
+      const sm = f.querySelector('.k-quote small'); if (sm) sm.textContent = 'Anticipo ' + f.dataset.adelanto + ' · financiás ' + f.dataset.financiado + ' en ' + n + ' cuotas';
+    }
+    f.addEventListener('change', calc); f.addEventListener('input', calc);
+    calc();
+  });
+
   // ---------- cotizador: <form data-quote='{"base":{…},"factor":{…}}'> ----------
   document.querySelectorAll('form[data-quote]').forEach(function (f) {
     const q = JSON.parse(f.dataset.quote);
@@ -142,7 +177,8 @@
     f.addEventListener('submit', function (e) {
       e.preventDefault();
       let msg = f.dataset.template.replace(/\{(\w+)\}/g, function (_, k) {
-        if (k === 'precio') return f.dataset.precio || '';
+        if (k in f.dataset && !f.elements[k]) return f.dataset[k];
+        if (k === 'precio' && f.dataset.precio) return f.dataset.precio;
         const el = f.elements[k];
         return el ? el.value.trim() : '';
       });

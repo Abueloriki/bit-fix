@@ -223,3 +223,9 @@ body.has-cart .wa { bottom: 92px; }
 .k-faq[open] summary::after { transform: rotate(45deg); }
 .k-faq p { color: var(--muted); margin: 0 0 1.2rem; }
 @media (max-width: 860px) { .k-team { grid-template-columns: 1fr; } }
+
+/* acciones de unidad (modo consulta) */
+.k-prod__actions { display: flex; gap: .5rem; flex-wrap: wrap; margin-top: .8rem; }
+.k-prod__actions .btn { flex: 1 1 auto; }
+.k-specs { display: flex; flex-wrap: wrap; gap: .3rem; margin: .2rem 0 .7rem; }
+.k-specs span { font-size: .75rem; font-weight: 600; padding: .2rem .5rem; border-radius: 6px; background: var(--soft); color: var(--muted); }
